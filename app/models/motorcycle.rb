@@ -1,10 +1,12 @@
 class Motorcycle < ApplicationRecord
 
-  validates :model, presence: true,
-  validates :description, presence: true,
-  validates :total_amount, presence: true,
+  validates :model, presence: true
+  validates :description, presence: true
+  validates :total_amount, presence: true
 
-  has_one_attached :image
+   # validates :name, presence: true, allow_blank: false
+
+  has_one_attached :image, dependent: :destroy
   has_many_attached :pictures
 
   def image_as_thumbnail

@@ -46,6 +46,6 @@ class MotorcyclesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def motorcycle_params
-      params.require(:motorcycle).permit(:model, :description, :deposit_fee, :finance_fee, :finance_fee, :total_amount, :duration, :apr_percent, :image, pictures: [])
+      params.require(:motorcycle).permit(:model, :description, :deposit_fee, :finance_fee, :total_amount, :duration, :apr_percent, :image,  pictures: [])
     end
 end
