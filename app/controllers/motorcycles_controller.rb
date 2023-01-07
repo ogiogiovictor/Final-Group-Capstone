@@ -7,7 +7,7 @@ class MotorcyclesController < ApplicationController
     #render json: @motorcycles
     @motorcycles = Motorcycle.all.joins(:image_attachment)
     render json: @motorcycles.map { |motorcycle|
-      motorcycle.as_json(only: %i[model description deposit_fee finance_fee total_amount duration apr_percent]).merge(image_path: url_for(motorcycle.image))
+      motorcycle.as_json(only: %i[id model description deposit_fee finance_fee total_amount duration apr_percent]).merge(image_path: url_for(motorcycle.image))
       .merge(pictures_path: motorcycle.pictures.map { |picture| url_for(picture) }) }
   
   end
@@ -16,7 +16,9 @@ class MotorcyclesController < ApplicationController
 
   # GET /motorcycles/1
   def show
-    render json: @motorcycle
+    @motorcycle = Motorcycle.find(params[:id])
+    render json: @motorcycle.as_json(only: %i[id model description deposit_fee finance_fee total_amount duration apr_percent]).merge(image_path: url_for(@motorcycle.image))
+    .merge(pictures_path: @motorcycle.pictures.map { |picture| url_for(picture) })
   end
 
   # POST /motorcycles
