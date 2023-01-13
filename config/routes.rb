@@ -1,13 +1,7 @@
 Rails.application.routes.draw do
-  namespace :api do
-    namespace :v1 do
-      get 'cars', to: 'cars#all_cars'
-      resources :users, except: [:new] do
-        resources :cars
-        resources :reservations
-      end
-    end
-  end
+  resources :users
+  resources :bookings
+  resources :motorcycles
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
