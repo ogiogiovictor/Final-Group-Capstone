@@ -1,5 +1,5 @@
 user1 = User.create!(
-  username: 'John',
+  username: 'MrOmachi',
   password: 'password',
   email: 'John@home.com',
   name: 'John'
