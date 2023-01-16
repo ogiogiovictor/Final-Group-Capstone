@@ -1,8 +1,7 @@
 class Motorcycle < ApplicationRecord
 
-  validates :model, presence: true
-  validates :description, presence: true
-  validates :total_amount, presence: true
+  belongs_to :user
+  validates :model, :description, :total_amount, presence: true
 
   validates_length_of :model, maximum: 50
 
