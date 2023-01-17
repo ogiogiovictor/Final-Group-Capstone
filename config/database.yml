@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: final_capstone_production
-  username: final_capstone
+  username: ogiogiovictor
   password: <%= ENV["FINAL_CAPSTONE_DATABASE_PASSWORD"] %>

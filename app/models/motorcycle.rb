@@ -7,6 +7,8 @@ class Motorcycle < ApplicationRecord
   validates_length_of :model, maximum: 50
 
    # validates :name, presence: true, allow_blank: false
+   
+   belongs_to :user
 
   has_one_attached :image, dependent: :destroy
   has_many_attached :pictures

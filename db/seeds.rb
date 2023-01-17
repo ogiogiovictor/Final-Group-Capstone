@@ -19,4 +19,4 @@
 @motorcycle4 = Motorcycle.create(model: "Vespa 104", description: "Vespa 104 - Description Example 4.", deposit_fee: 104.00, finance_fee:150.00, total_amount:9345.0, duration: 48, apr_percent:9.45)
 @motorcycle5 = Motorcycle.create(model: "Vespa 105", description: "Vespa 105 - Description Example 5.", deposit_fee: 105.00, finance_fee:160.00, total_amount:9607.0, duration: 48, apr_percent:9.45)
 
-@booking1 = Booking.create(location: "London", model:@motorcicle1, start_date: '01/01/2023', end_date: '02/02/2023') 
+ @booking1 = Booking.create(location: "London", model:@motorcicle1, start_date: '01/01/2023', end_date: '02/02/2023', user_id: 1) 

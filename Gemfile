@@ -14,6 +14,15 @@ gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+# handle auth
+gem 'devise'
+
+# handle auth for api
+gem 'devise-jwt'
+
+#Can can
+gem 'cancancan'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
