@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_090151) do
     t.string "model"
     t.integer "release_year"
     t.string "color"
+    t.string "image_path"
     t.string "transmission"
     t.integer "seats"
     t.string "wheel_drive"
