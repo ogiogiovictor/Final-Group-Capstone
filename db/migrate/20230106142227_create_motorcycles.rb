@@ -8,6 +8,7 @@ class CreateMotorcycles < ActiveRecord::Migration[7.0]
       t.decimal :total_amount
       t.integer :duration
       t.float :apr_percent
+      
 
       t.timestamps
     end
