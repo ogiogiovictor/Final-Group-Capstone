@@ -54,12 +54,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_16_233923) do
 
   create_table "bookings", force: :cascade do |t|
     t.string "location"
+    t.date "date"
     t.string "model"
     t.datetime "start_date"
     t.datetime "end_date"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "motorcycle_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
@@ -73,10 +76,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_16_233923) do
     t.float "apr_percent"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.string "username"
+    t.string "encrypted_password"
+    t.string "email"
+    t.string "name", default: "user"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false

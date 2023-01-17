@@ -12,8 +12,6 @@ class MotorcyclesController < ApplicationController
   
   end
 
-  
-
   # GET /motorcycles/1
   def show
     @motorcycle = Motorcycle.find(params[:id])
@@ -42,7 +40,9 @@ class MotorcyclesController < ApplicationController
 
   # DELETE /motorcycles/1
   def destroy
+    @motorcycle = Motorcycle.find(params[:id])
     @motorcycle.destroy
+    
   end
 
   private
