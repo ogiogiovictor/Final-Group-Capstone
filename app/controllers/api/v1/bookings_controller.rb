@@ -16,8 +16,8 @@ class Api::V1::BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     # @booking.location = ??? to be reviewed
     @booking.date = Date.new
-    @booking.reserved_from = Date.new
-    @booking.reserved_until = Date.new
+    @booking.start_date = Date.new
+    @booking.end_date = Date.new
     @booking.user = User.find(params[:user_id])
     @booking.motorcycle = Motorcycle.find(params[:motorcycle_id])
 
@@ -44,7 +44,7 @@ class Api::V1::BookingsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def booking_params
-    params.require(:booking).permit(:location:, :date, :reseved_from, :reserved_until, :user_id, :motorcycle_id)
+    params.require(:booking).permit(:location:, :date, :start_date, :end_date, :user_id, :motorcycle_id)
   end
 
   def set_user

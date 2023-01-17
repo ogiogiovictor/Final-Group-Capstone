@@ -54,16 +54,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_16_233923) do
 
   create_table "bookings", force: :cascade do |t|
     t.string "location"
-    t.date "date"
     t.string "model"
     t.datetime "start_date"
     t.datetime "end_date"
-    t.bigint "user_id", null: false
+    t.datetime "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "motorcycle_id"
-    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "motorcycles", force: :cascade do |t|
@@ -80,10 +78,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_16_233923) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "encrypted_password"
-    t.string "email"
-    t.string "name", default: "user"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
@@ -100,5 +95,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_16_233923) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "bookings", "users"
 end
