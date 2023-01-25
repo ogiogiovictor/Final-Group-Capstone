@@ -18,3 +18,10 @@ User.create!(
       price: 30000
     )
   end
+
+
+  4.times do |i|
+    Reservation.create!(
+      date: Date.new, reserved_from: Date.new, reserved_until: Date.new, user: User.first, car: Car.first
+    )
+  end
