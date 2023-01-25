@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'swagger_helper'
 describe 'Car API' do
   path '/api/v1/cars' do
