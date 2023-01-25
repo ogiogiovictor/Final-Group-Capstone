@@ -15,7 +15,7 @@ User.create!(
       transmission: 'manual',
       seats: 6,
       wheel_drive: 'four-wheel',
-      price: 30000
+      price: 3000
     )
   end
 
