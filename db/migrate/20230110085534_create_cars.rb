@@ -5,11 +5,11 @@ class CreateCars < ActiveRecord::Migration[7.0]
       t.string :model
       t.integer :release_year
       t.string :color
-      t.string :image_path
       t.string :transmission
       t.integer :seats
       t.string :wheel_drive
       t.integer :price
+      t.string :image_link
 
       t.timestamps
     end
