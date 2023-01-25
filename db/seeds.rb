@@ -5,7 +5,7 @@ User.create!(
     name: 'John'
   )
 
-  4.times do |i|
+  5.times do |i|
     Car.create!(
       user_id: 1,
       brand: "Camery #{i + 1}",
@@ -20,7 +20,7 @@ User.create!(
   end
 
 
-  4.times do |i|
+  5.times do |i|
     Reservation.create!(
       date: Date.new, reserved_from: Date.new, reserved_until: Date.new, user: User.first, car: Car.first
     )
