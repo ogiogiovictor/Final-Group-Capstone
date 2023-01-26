@@ -22,6 +22,6 @@ User.create!(
 
   5.times do |i|
     Reservation.create!(
-      date: Date.new, reserved_from: Date.new, reserved_until: Date.new, user: User.first, car: Car.first
+      date: '2023-10-04', reserved_from: '2022-10-04', reserved_until: '2024-10-04', user: User.first, car: Car.first
     )
   end
