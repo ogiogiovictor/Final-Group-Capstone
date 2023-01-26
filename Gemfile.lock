@@ -248,10 +248,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
-<<<<<<< HEAD
   x64-mingw-ucrt
-=======
->>>>>>> a910480 (Dev fix)
   x86_64-linux
 
 DEPENDENCIES
