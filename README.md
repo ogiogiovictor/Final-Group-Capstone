@@ -139,6 +139,7 @@ npm run dev
 ```
 when asked for a new port for local host type "y"
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Testing
 You may test by executing:
@@ -149,6 +150,7 @@ rspec ./spec/requests
 
 rails rswag   
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## API documentation
 
