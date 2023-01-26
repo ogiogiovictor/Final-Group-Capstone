@@ -8,22 +8,8 @@ Rails.application.routes.draw do
       get 'cars', to: 'cars#all_cars'
       get 'users/login', to: 'users#login'
       resources :users, except: [:new] do
-<<<<<<< HEAD
         resources :cars
         resources :reservations
-=======
-        # devise_for :users, path: '', path_names: {
-        #   sign_in: 'login',
-        #   sign_out: 'logout',
-        #   registration: 'signup'
-        # },
-        # controllers: {
-        #   sessions: 'users/sessions',
-        #   registrations: 'users/registrations'
-        # }
-        resources :motorcycles
-        resources :bookings
->>>>>>> a910480 (Dev fix)
       end
     end
   end
