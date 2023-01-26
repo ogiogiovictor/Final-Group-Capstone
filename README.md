@@ -41,9 +41,7 @@
 
 > This project was built using as major staks the following:
 
-</details>
-
-<<details>
+<details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
@@ -58,7 +56,7 @@
 </details>
 
 <details>
-<summary>Database</summary>
+  <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
@@ -87,6 +85,14 @@ In order to run this project you need:
 Make sure you have installed locally:
 Ruby 
 Nodejs
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
 
 ### Setup
 
@@ -147,8 +153,6 @@ rails rswag
 
 - [Api Documentation](https://rento-api.onrender.com/api-docs/index.html)
 
- -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -181,7 +185,7 @@ rails rswag
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--  **[Authentication]**
+- **[Authentication]**
 - **[CRUD]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -208,10 +212,9 @@ If you like this project star the project and leave a star
 
 > This project was built and developed around the UI idea of [Murat Korkmaz](https://www.behance.net/muratk) on [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 
-We would like to thank Microverse.
+> We would like to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
