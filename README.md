@@ -187,7 +187,6 @@ when asked for a new port for local host type "y"
 
 - **[Authentication]**
 - **[CRUD]**
-- **[Testing]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
