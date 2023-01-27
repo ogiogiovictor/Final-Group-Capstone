@@ -24,9 +24,17 @@
 
 > Rentomotors is an app that enables users to reserve cars for their personal benefits for a certain period of time.
 
+## Images
+
+![image](https://user-images.githubusercontent.com/77974883/215064710-20f37924-716a-44b1-b0ba-dc6581502f53.png)
+![image](https://user-images.githubusercontent.com/77974883/215064959-3d5a3381-d982-4338-aa9b-6aca97503b0d.png)
+![image](https://user-images.githubusercontent.com/77974883/215065024-d02ecc0b-5b47-4b05-8cef-5fdbf5285af2.png)
+![image](https://user-images.githubusercontent.com/77974883/215065087-3561ddcf-8602-4f1a-9fd0-f4d63ca01a1c.png)
+![image](https://user-images.githubusercontent.com/77974883/215065178-88e814e0-688a-4e71-814e-1d261f3cdae8.png)
+
 ## Links
 
-- [React Frontend of this app](https://github.com/zemola/final-capstone-front-end)
+- [React Frontend of this app](https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-React)
 - [Api Documentation](https://rento-api.onrender.com/api-docs/index.html)
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -39,16 +47,27 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> This project was built using as major staks the following:
 
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
 </details>
 
 <details>
-```bash
-- Ruby
-- Rails
-- PostgreSQL
-```
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
@@ -61,38 +80,78 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+To get a local copy up and running, follow these steps.
+
 ### Prerequisites
 
 In order to run this project you need:
 
- gem install rails
-
-
-### Setup
-
-Clone this repository to your desired folder:
-
-  cd my-folder
-  git clone https://github.com/Christianib003/capstone-backend.git
-
-### Install
-
-Install this project with:
+Make sure you have installed locally:
+Ruby 
+Nodejs
 
 <!--
 Example command:
 
 ```sh
-  cd blog-app
-  gem install
+ gem install rails
 ```
---->
+ -->
 
-### Usage
+### Setup
 
-To run the project, execute the following command:
+Clone this repository to your desired folder : git clone https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-Rails
 
- - `rails server`
+Execute on console making sure you are in the correct directory:
+```sh
+bundle install
+npm i
+```
+
+-create a file named application.yml under config folder and write the following Variables:
+```sh
+USER_NAME = “xxx” (xxx replace with your Postgres user name)
+PASSWORD = “xxx” (xxx replace with your Postgres password)
+```
+-On console execute
+```sh
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+-Create Master key:
+```sh
+EDITOR="mate --wait" bin/rails credentials:edit
+```
+```sh
+rails s
+```
+
+clone frontend app: git clone https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-React
+
+Navigate to correct directory:
+
+Add Dependencies
+```sh
+npm i
+```
+
+```sh
+npm run dev
+```
+when asked for a new port for local host type "y"
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## API documentation
+
+- [Api Documentation](https://rento-api.onrender.com/api-docs/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +159,7 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+> Mention all of the collaborators of this project..
 
 👤 **Ogiogio Victor**
 
@@ -114,13 +173,19 @@ To run the project, execute the following command:
 - Twitter: [@mr_omachi](https://twitter.com/mr_omachi)
 - LinkedIn: [John Omachi](https://www.linkedin.com/in/johnomachi/)
 
+👤 **Silva Fernando César da**
+
+- GitHub: [@fernando-silvabr66](https://github.com/fernando-silvabr66)
+- Twitter: [@fsilvabr1](https://twitter.com/fsilvabr1)
+- LinkedIn: [https://linkedin.com/in/fernando-silvabr66](https://linkedin.com/in/fernando-silvabr66) 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--  **[Authentication]**
+- **[Authentication]**
 - **[CRUD]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,7 +194,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Christianib003/capstone-backend/issues).
+Feel free to check the [issues page](https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-Rails/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,10 +212,9 @@ If you like this project star the project and leave a star
 
 > This project was built and developed around the UI idea of [Murat Korkmaz](https://www.behance.net/muratk) on [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 
-I would like to thank Microverse.
+> We would like to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 

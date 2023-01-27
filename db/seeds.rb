@@ -15,13 +15,13 @@ User.create!(
       transmission: 'manual',
       seats: 6,
       wheel_drive: 'four-wheel',
-      price: 30000
+      price: 3000
     )
   end
 
 
   5.times do |i|
     Reservation.create!(
-      date: Date.new, reserved_from: Date.new, reserved_until: Date.new, user: User.first, car: Car.first
+      date: '2023-10-04', reserved_from: '2022-10-04', reserved_until: '2024-10-04', user: User.first, car: Car.first
     )
   end
