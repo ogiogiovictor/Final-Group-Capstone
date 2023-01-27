@@ -24,6 +24,9 @@
 
 > Rentomotors is an app that enables users to reserve cars for their personal benefits for a certain period of time.
 
+## Images
+
+
 ## Links
 
 - [React Frontend of this app](https://github.com/ogiogiovictor/Final-Group-Capstone-Reservation-React)
