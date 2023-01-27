@@ -18,8 +18,8 @@ module Api
 
       def create
         @reservation = Reservation.new(reservation_params)
-        @reservation.date = Date.new
-        @reservation.reserved_from = Date.new
+        @reservation.date = Time.now
+        # @reservation.reserved_from = Date.new
         @reservation.user = User.find(params[:user_id])
         @reservation.car = Car.find(params[:car_id])
 
