@@ -141,17 +141,6 @@ when asked for a new port for local host type "y"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Testing
-You may test by executing:
-
-rspec ./spec/models
-
-rspec ./spec/requests
-
-rails rswag   
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## API documentation
 
 - [Api Documentation](https://rento-api.onrender.com/api-docs/index.html)
@@ -190,6 +179,7 @@ rails rswag
 
 - **[Authentication]**
 - **[CRUD]**
+- **[Testing]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
